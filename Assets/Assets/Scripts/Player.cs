@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
             FiringCoroutine = StartCoroutine(FireContinuously());
         }
 
-        if(Input.GetButtonUp("Fire1"))
+        if (Input.GetButtonUp("Fire1"))
         {
             StopCoroutine(FiringCoroutine);
         }
