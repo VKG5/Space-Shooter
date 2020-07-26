@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 5652702248599330080}
   - component: {fileID: 5652702248599330081}
   - component: {fileID: -1867992772224784594}
-  - component: {fileID: 2016707648052258258}
-  - component: {fileID: -1298666630321511906}
+  - component: {fileID: -4547757664988924514}
+  - component: {fileID: -5137925255448629266}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Enemy 1
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 96b1faa2a71a68e448e28c12126a9102, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a8078e1b51b198c4abb86b89e8672069, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4233c67b59cff834cbb6923cab4199ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2016707648052258258
+--- !u!114 &-4547757664988924514
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
---- !u!58 &-1298666630321511906
+--- !u!58 &-5137925255448629266
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,4 +124,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.465
+  m_Radius: 0.42

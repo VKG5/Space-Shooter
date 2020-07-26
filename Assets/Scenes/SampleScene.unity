@@ -167,6 +167,9 @@ MonoBehaviour:
   waveconfigs:
   - {fileID: 11400000, guid: e72c5ea125108904abd696c80e43d4d3, type: 2}
   - {fileID: 11400000, guid: aa9bf2bc464b62446b1a7fc5137dc1bc, type: 2}
+  - {fileID: 11400000, guid: a91e42d79acad54459350cc46a76e067, type: 2}
+  - {fileID: 11400000, guid: cd123d92a2a72754f8d6e4a4742983c4, type: 2}
+  looping: 1
 --- !u!1 &1312985960
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,7 +234,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &547410941346733418
 PrefabInstance:
@@ -604,7 +607,7 @@ PrefabInstance:
     - target: {fileID: 5673306959650435964, guid: d4ab91f913026944b8c4a480e49688ae,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5673306959650435964, guid: d4ab91f913026944b8c4a480e49688ae,
         type: 3}
