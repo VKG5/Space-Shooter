@@ -6,8 +6,12 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // config params
+    [Header("Player")]
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float padding = 1f;
+    [SerializeField] int health = 200;
+
+    [Header("Projectile")]
     [SerializeField] GameObject laserPrefab;
     [SerializeField] float projectileSpeed = 3f;
     [SerializeField] float projectileFiringPeriod = 0.5f;
@@ -57,6 +61,25 @@ public class Player : MonoBehaviour
             laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileSpeed);
 
             yield return new WaitForSeconds(projectileFiringPeriod);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        // To check if we get hit by a prefab/object with component DamageDealer
+        DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
+        if(!damageDealer) { return; }
+        ProcessHit(damageDealer);
+    }
+
+    private void ProcessHit(DamageDealer damageDealer)
+    {
+        health -= damageDealer.GetDamage();
+        damageDealer.Hit();
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 
